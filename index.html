@@ -1,166 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proposta Interativa Solar</title>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Proposta Solar Personalizada</title>
+
+  <!-- Fonts e Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <style>
-    body {
-      font-family: 'IBM Plex Sans', sans-serif;
-      margin: 0;
-      background-color: #f9fafb;
-      color: #1f2937;
-    }
-    .container {
-      max-width: 480px;
-      margin: auto;
-      padding: 24px 16px;
-    }
-    section {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-      margin-bottom: 24px;
-      padding: 20px;
-    }
-    h1, h2 {
-      margin-top: 0;
-    }
-    h1 {
-      font-size: 22px;
-      color: #111827;
-    }
-    h2 {
-      font-size: 18px;
-      color: #2563eb;
-    }
-    p, li {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .cta {
-      display: block;
-      background-color: #10b981;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      margin-top: 20px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background-color 0.2s ease;
-    }
-    .cta:hover {
-      background-color: #0e9f6e;
-    }
-    .highlight {
-      font-weight: 600;
-      font-size: 18px;
-      color: #22c55e;
-    }
-    .faq {
-      cursor: pointer;
-      border-bottom: 1px solid #e5e7eb;
-      padding: 12px 0;
-    }
-    .faq-answer {
-      display: none;
-      padding: 8px 0 12px 0;
-      color: #4b5563;
-    }
-    img.equipamento {
-      width: 100%;
-      max-width: 420px;
-      border-radius: 10px;
-      margin: 12px 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-    }
+    * { font-family: "Inter", sans-serif; }
+    ::-webkit-scrollbar { display: none; }
   </style>
 </head>
-<body>
-  <div class="container">
+<body class="bg-gray-50 text-base-content">
 
-    <section>
-      <h1>Olá, Carlos Alberto</h1>
-      <p>Confira sua proposta solar exclusiva para <strong>Palmas - TO</strong>.</p>
+  <!-- Cabeçalho -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="flex justify-between items-center px-4 py-3">
+      <div class="flex items-center">
+        <button class="mr-2 text-gray-600">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h1 class="text-lg font-bold text-gray-800">Proposta de Energia Solar</h1>
+      </div>
+      <div class="flex items-center">
+        <button class="p-2 rounded-full bg-gray-100 text-gray-600">
+          <i class="fa-solid fa-share-alt"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Container principal -->
+  <main class="px-4 pt-4 space-y-6">
+
+    <!-- Saudação -->
+    <section class="bg-white rounded-xl shadow-md p-4">
+      <div class="flex items-center mb-2">
+        <i class="fa-solid fa-user text-primary text-xl mr-2"></i>
+        <h2 class="text-lg font-semibold text-gray-800">Olá, Carlos Alberto</h2>
+      </div>
+      <p class="text-sm text-gray-600">Preparamos sua proposta personalizada para instalação de energia solar em Palmas - TO.</p>
+    </section>
+<!-- Sistema Proposto -->
+    <section class="bg-white rounded-xl shadow-md p-4">
+      <div class="flex items-center mb-2">
+        <i class="fa-solid fa-solar-panel text-yellow-500 text-xl mr-2"></i>
+        <h2 class="text-lg font-semibold text-gray-800">Sistema Proposto</h2>
+      </div>
+      <div class="grid grid-cols-2 gap-3 text-sm text-gray-700 mt-2">
+        <div class="bg-blue-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Potência Total</p>
+          <p class="font-semibold">8.4 kWp</p>
+        </div>
+        <div class="bg-blue-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Consumo Mensal</p>
+          <p class="font-semibold">1.001,70 kWh/mês</p>
+        </div>
+        <div class="bg-blue-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Tipo de Sistema</p>
+          <p class="font-semibold">Residencial On-Grid</p>
+        </div>
+        <div class="bg-blue-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Eficiência Média</p>
+          <p class="font-semibold">≥97,8%</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Antes e Depois</h2>
-      <p><strong>Consumo atual:</strong> R$ 2.137,49</p>
-      <p><strong>Com solar:</strong> R$ 89,00</p>
-      <p><span class="highlight">Economia: R$ 496.092,00</span></p>
+    <!-- Equipamentos -->
+    <section class="bg-white rounded-xl shadow-md p-4">
+      <div class="flex items-center mb-3">
+        <i class="fa-solid fa-box-open text-green-500 text-xl mr-2"></i>
+        <h2 class="text-lg font-semibold text-gray-800">Equipamentos Selecionados</h2>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-sm font-bold text-gray-700">Módulos - RenePV 700W HJT Bifacial</h3>
+        <p class="text-sm text-gray-600 mb-1">12 unidades • Garantia: 25 anos</p>
+        <img class="w-full rounded-lg mb-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d13eb709c3-4fe30ac54368d10f094a.png" alt="Módulo Fotovoltaico">
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-sm font-bold text-gray-700">Inversor - SAJ 6kW Monofásico</h3>
+        <p class="text-sm text-gray-600 mb-1">Modelo R5 • Garantia: 10 anos</p>
+        <img class="w-full rounded-lg mb-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5fff618813-2e692b88d358415ccfde.png" alt="Inversor Solar">
+      </div>
+
+      <div class="mb-2">
+        <h3 class="text-sm font-bold text-gray-700">Estrutura de Fixação</h3>
+        <p class="text-sm text-gray-600">Telhado cerâmico • Alumínio anodizado • Parafuso inox</p>
+      </div>
+    </section>
+<!-- Investimento -->
+    <section class="bg-white rounded-xl shadow-md p-4">
+      <div class="flex items-center mb-2">
+        <i class="fa-solid fa-hand-holding-dollar text-green-600 text-xl mr-2"></i>
+        <h2 class="text-lg font-semibold text-gray-800">Investimento e Economia</h2>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 text-sm text-gray-700 mt-2">
+        <div class="bg-green-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Valor Total</p>
+          <p class="font-semibold text-green-700">R$ 9.396,96</p>
+        </div>
+        <div class="bg-green-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Payback Estimado</p>
+          <p class="font-semibold text-green-700">3,1 anos</p>
+        </div>
+        <div class="bg-green-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Economia 25 anos</p>
+          <p class="font-semibold text-green-700">R$ 496.092</p>
+        </div>
+        <div class="bg-green-50 p-3 rounded-lg">
+          <p class="text-xs text-gray-500">Parcelamento</p>
+          <p class="font-semibold text-green-700">até 36x</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Módulo Fotovoltaico</h2>
-      <img src="https://www.e-green360.it/wp-content/uploads/2022/01/Jinko-Solar-Tiger-Pro-72HC-540-560W.png" alt="Módulo Jinko Tiger Pro 550W" class="equipamento">
-      <p><strong>Modelo:</strong> Jinko Tiger Pro 550W</p>
-      <p><strong>Quantidade:</strong> 36 unidades</p>
-      <p><strong>Garantia:</strong> 25 anos</p>
-    </section>
+    <!-- FAQ -->
+    <section class="bg-white rounded-xl shadow-md p-4">
+      <div class="flex items-center mb-3">
+        <i class="fa-solid fa-circle-question text-blue-500 text-xl mr-2"></i>
+        <h2 class="text-lg font-semibold text-gray-800">Dúvidas Frequentes</h2>
+      </div>
 
-    <section>
-      <h2>Inversor Huawei</h2>
-      <img src="https://bulkenergy.cl/wp-content/uploads/2023/01/Inversor-Hibrido-10kW-Huawei-SUN2000-10KTL-LC0-Monofasico.png" alt="Inversor Huawei SUN2000" class="equipamento">
-      <p><strong>Modelo:</strong> SUN2000-10KTL</p>
-      <p><strong>Potência:</strong> 10kW | Eficiência: 98,6%</p>
-      <p><strong>Garantia:</strong> 10 anos</p>
-    </section>
-
-    <section>
-      <h2>Estrutura de Fixação</h2>
-      <img src="https://www.buyersenergy.com.br/wp-content/uploads/2022/11/Estrutura-de-Fixacao-4-Paineis-Telhado-Ceramico.png" alt="Estrutura Telhado Cerâmico" class="equipamento">
-      <p><strong>Tipo:</strong> Telhado cerâmico</p>
-      <p><strong>Material:</strong> Alumínio anodizado</p>
-      <p><strong>Garantia:</strong> 10 anos</p>
-    </section>
-
-    <section>
-      <h2>Etapas do Projeto</h2>
-      <ul>
-        <li>Projeto com ART</li>
-        <li>Instalação profissional</li>
-        <li>Homologação com a Energisa</li>
-        <li>Ativação do monitoramento</li>
+      <ul class="text-sm text-gray-600 space-y-2">
+        <li>
+          <strong>O que acontece se chover?</strong><br>
+          O sistema continua gerando, mas com menor eficiência. O excedente pode ser compensado.
+        </li>
+        <li>
+          <strong>Tenho que pagar algo depois?</strong><br>
+          Apenas a taxa mínima da concessionária (~R$ 89) e possíveis excedentes em dias de alta demanda.
+        </li>
+        <li>
+          <strong>Qual a manutenção?</strong><br>
+          Limpeza semestral. O sistema tem baixa manutenção e alta durabilidade.
+        </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Investimento</h2>
-      <p>Valor total: <strong>R$ 54.800,00</strong></p>
-      <p>Financiamento a partir de R$ 759/mês</p>
-      <p>Payback estimado: 3,1 anos</p>
+    <!-- CTA WhatsApp -->
+    <section class="fixed bottom-4 left-4 right-4 z-50">
+      <a href="https://wa.me/5563999999999?text=Olá,%20quero%20fechar%20minha%20proposta%20de%20energia%20solar!"
+         class="flex justify-center items-center gap-2 bg-green-500 text-white py-3 rounded-full shadow-lg text-base font-semibold w-full hover:bg-green-600">
+        <i class="fa-brands fa-whatsapp text-xl"></i> Falar com um Especialista
+      </a>
     </section>
 
-    <section>
-      <h2>Dúvidas Frequentes</h2>
-      <div class="faq" onclick="toggleFaq(this)">
-        E se chover?
-        <div class="faq-answer">O sistema continua gerando energia mesmo com baixa irradiação, embora com menor eficiência.</div>
-      </div>
-      <div class="faq" onclick="toggleFaq(this)">
-        E se eu produzir mais do que consumo?
-        <div class="faq-answer">O excedente vira crédito e pode ser usado em até 60 meses ou em outras unidades consumidoras.</div>
-      </div>
-    </section>
-
-    <a class="cta" href="https://wa.me/5563999999999?text=Quero%20fechar%20minha%20proposta%20solar">
-      Falar com um especialista
-    </a>
-
-  </div>
-
-  <script>
-    function toggleFaq(el) {
-      const answer = el.querySelector('.faq-answer');
-      const isVisible = answer.style.display === 'block';
-      answer.style.display = isVisible ? 'none' : 'block';
-    }
-  </script>
+  </main>
 </body>
 </html>
